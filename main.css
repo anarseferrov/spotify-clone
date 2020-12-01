@@ -1,0 +1,559 @@
+@import url(//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black);
+
+@font-face {
+    font-family: "Circular Spotify Tx T Black";
+    src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot");
+    src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff") format("woff"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.svg#Circular Spotify Tx T Black") format("svg");
+}
+
+body {
+    margin: 0;
+    font-family: "Circular Spotify Tx T Black";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.site {
+    position: relative;
+}
+
+.header {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.container {
+    overflow: hidden;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    width: 140px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo img {
+    cursor: pointer;
+    width: 100%;
+}
+
+.menu {
+    float: right;
+}
+
+.menu a,
+span {
+    text-decoration: none;
+    float: left;
+    font-size: 16px;
+    padding: 28px 17px;
+}
+
+.white:hover {
+    color: #1DB760;
+}
+
+.menu span {
+    color: white;
+}
+
+.muted:hover {
+    transition: .2s;
+    color: #1DB760;
+}
+
+.white {
+    color: white;
+}
+
+.muted {
+    color: rgb(202, 199, 199);
+}
+
+.icon {
+    display: none;
+    float: none;
+}
+
+
+.icon i {
+    color: white;
+    font-size: 22px;
+}
+
+@media only screen and (max-width:992px) {
+    .header {
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    .logo {
+        width: 100px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .icon {
+        padding: 10px;
+        display: block;
+        float: right;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+.pink {
+    background-color: #FFCDD2;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.pink h1 {
+    font-size: 80px;
+}
+
+.pink h2 {
+    font-size: 30px;
+}
+
+.pink p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.pink a {
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: black;
+}
+
+.pink button {
+    margin-top: 15px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 17px 58px;
+    border-radius: 38px;
+    font-weight: 550;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.pink .green {
+    color: white;
+    background-color: #1DB954;
+}
+
+.pink .white {
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.pink .green:hover {
+    transition: .3s;
+    filter: brightness(120%);
+}
+
+.pink button:hover {
+    transform: scale(1.03) perspective(2px);
+}
+
+.pink .text {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width:768px) {
+    .pink button {
+        display: block;
+        width: 100%;
+    }
+
+    .pink .text {
+        width: 96%;
+    }
+
+    .pink h1 {
+        font-size: 40px;
+    }
+
+    .pink h2 {
+        font-size: 25px;
+    }
+}
+
+.colorful {
+    background: url(https://campaigns.scdn.co/images/hero-burst-mobile.svg) no-repeat center/878px 676px, linear-gradient(#F037A5 -60%, #FAE62D 140%);
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    padding-top: 35px;
+    padding-bottom: 50px;
+}
+
+.colorful h1 {
+    font-size: 80px;
+}
+
+.colorful h3 {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.colorful button {
+    margin-top: 15px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 17px 58px;
+    border-radius: 38px;
+    font-weight: 550;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+    color: white;
+    background-color: #1DB954;
+}
+
+.colorful button:hover {
+    transition: .3s;
+    filter: brightness(120%);
+    transform: scale(1.03) perspective(2px);
+}
+
+@media only screen and (max-width:768px) {
+    .colorful button {
+        margin: 20px 3px;
+        display: block;
+        width: 100%;
+    }
+
+    .colorful {
+        padding: 10px 10px;
+    }
+
+    .colorful h1 {
+        font-size: 50px;
+    }
+
+    .colorful h3 {
+        font-size: 18px;
+    }
+}
+
+
+.footer {
+    background-color: black;
+    overflow: hidden;
+    padding: 75px 45px;
+}
+
+.footer .common-logo,
+.link,
+.social,
+.common-links {
+    float: left;
+}
+
+.footer .common-logo {
+    width: 20%;
+}
+
+.footer .common-links {
+    width: 40%;
+}
+
+.footer .social {
+    width: 28%;
+}
+
+.scl {
+    float: right;
+}
+
+.footer .link {
+    margin-bottom: 70px;
+}
+
+.footer .link a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.footer .common-links .link {
+    width: 32.3333%;
+}
+
+.footer p,
+span {
+    color: rgb(175, 170, 170);
+}
+
+.social i {
+    font-size: 12px;
+    margin-left: 5px;
+    color: white;
+    background-color: rgb(37, 37, 37);
+}
+
+.footer .logo {
+    width: 140px;
+}
+
+.footer .link p {
+    font-size: 12px;
+    padding: 10px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.footer .link a {
+    font-size: 14px;
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer .logo img {
+    width: 100%;
+}
+
+.footer a:hover {
+    transition: .2s;
+    color: #1DB954;
+}
+
+.fa-instagram {
+    padding: 16px 18px;
+    border-radius: 40px;
+}
+
+.fa-twitter {
+    padding: 16px;
+    border-radius: 40px;
+}
+
+.fa-facebook {
+    padding: 16px 20px;
+    border-radius: 40px;
+}
+
+.social i:hover {
+    transition: .2s;
+    color: #1DB954;
+}
+
+.social i {
+    cursor: pointer;
+    font-size: 25px;
+}
+
+@media only screen and (max-width:992px) {
+    .footer .common-logo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer .social {
+        width: 100%;
+    }
+
+    .common-links {
+        margin-bottom: 50px;
+    }
+
+    .footer .common-links {
+        width: 100%;
+    }
+
+    .footer .social .scl {
+        float: left;
+    }
+
+}
+
+.foot {
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    margin-top: 50px;
+}
+
+.foot a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(148, 143, 143);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    padding-left: 13px;
+}
+
+
+.foot .footer-links,
+.country {
+    float: left;
+    width: 50%;
+}
+
+.px {
+    width: 110px;
+    overflow: hidden;
+    float: right;
+    padding-right: 20px;
+}
+
+.usa {
+    float: left;
+    width: 50%;
+    padding: 0;
+}
+
+.country .img {
+    float: right;
+    width: 50%;
+}
+
+.country .img img {
+    width: 100%;
+}
+
+.country .text span {
+    font-size: 10px;
+    padding: 0;
+    float: right;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer .common-links .link {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+
+    .footer .link {
+        margin-top: 20px;
+    }
+
+    .footer .logo {
+        width: 100px;
+    }
+}
+
+/*responsive menu*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 9999;
+}
+
+#trans-p {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 0.03s;
+    background-color: rgba(0, 0, 0, 0.74);
+    overflow: hidden;
+    z-index: -1;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 36px;
+    display: block;
+    transition: 0.14s;
+}
+
+.sidenav p {
+    padding: 0px 8px 0px 32px;
+    display: block;
+    color: white;
+    font-size: 28px;
+}
+
+.sidenav .small {
+    color: rgb(175, 170, 170);
+    font-size: 25px;
+}
+
+.sidenav .small:hover {
+    color: #1DB954;
+}
+
+.sidenav p:after {
+    content: ' \2014';
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -4px;
+    right: 50px;
+    font-size: 42px;
+    color: white;
+}
+
+.side-icon-container {
+    padding-left: 0px;
+    padding-top: 145px;
+}
+
+.side-icon {
+    width: 120px;
+}
+
+.side-icon img {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* @media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+*/
+@media only screen and (min-width:992px) {
+    .sidenav {
+        display: none;
+    }
+
+    #trans-p {
+        display: none;
+    }
+}

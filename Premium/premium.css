@@ -1,0 +1,816 @@
+@import url(//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black);
+
+@font-face {
+    font-family: "Circular Spotify Tx T Black";
+    src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot");
+    src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff") format("woff"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.svg#Circular Spotify Tx T Black") format("svg");
+}
+
+body {
+    margin: 0;
+    font-family: "Circular Spotify Tx T Black";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.nav-transparent {
+    background-color: transparent;
+    transition: .9s;
+}
+
+.nav-colored {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.header {
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+}
+
+.container {
+    overflow: hidden;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    width: 132px;
+    margin-top: 14px;
+}
+
+.logo img {
+    cursor: pointer;
+    width: 100%;
+}
+
+.menu {
+    float: right;
+}
+
+.menu a,
+span {
+    text-decoration: none;
+    float: left;
+    font-size: 16px;
+    padding: 28px 17px;
+    font-family: "Circular Spotify Tx T Black";
+}
+
+.white:hover {
+    /* color: #1DB760; */
+    color: black;
+}
+
+.greeen {
+    color: white;
+}
+
+.greeen:hover {
+    color: #1DB760;
+    transition: .1s;
+}
+
+.menu span {
+    color: white;
+}
+
+.muted:hover {
+    transition: .2s;
+    /* color: #1DB760; */
+    color: black;
+}
+
+.white {
+    color: white;
+}
+
+.muted {
+    color: rgb(202, 199, 199);
+}
+
+.icon {
+    display: none;
+    float: none;
+}
+
+
+.icon i {
+    color: white;
+    font-size: 22px;
+}
+
+@media only screen and (max-width:992px) {
+    .logo {
+        width: 100px;
+        margin-top: 5px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .icon {
+        padding: 10px;
+        display: block;
+        float: right;
+    }
+
+    .container {
+        width: 90%;
+        padding: 3px 0;
+    }
+
+    .header {
+        background-color: rgba(0, 0, 0);
+    }
+}
+
+/*responsive menu*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 9999;
+}
+
+#trans-p {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 0.03s;
+    background-color: rgba(0, 0, 0, 0.74);
+    overflow: hidden;
+    z-index: 5;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 36px;
+    display: block;
+    transition: 0.14s;
+    font-family: "Circular Spotify Tx T Black";
+}
+
+.sidenav a:hover {
+    color: #1DB954;
+}
+
+.sidenav p {
+    padding: 10px 8px 10px 32px;
+    display: block;
+    width: 50px;
+    overflow: hidden;
+    text-align: start;
+    color: white;
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+
+}
+
+.sidenav .small {
+    color: white;
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+.sidenav .small:hover {
+    color: #1DB954;
+}
+
+.sidenav p:after {
+    content: ' \2014';
+}
+
+.skinny {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    padding-top: 23px;
+    color: white !important;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -4px;
+    right: 50px;
+    font-size: 42px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.sidenav .closebtn:hover {
+    color: white;
+}
+
+.side-icon-container {
+    padding-left: 26px;
+    padding-top: 145px;
+}
+
+.side-icon {
+    margin-top: 20px;
+    width: 90px;
+}
+
+.side-icon a {
+    padding: 0;
+    margin: 0;
+}
+
+.side-icon img {
+    width: 100%;
+    cursor: pointer;
+}
+
+@media only screen and (min-width:992px) {
+    .sidenav {
+        display: none;
+    }
+
+    #trans-p {
+        display: none;
+    }
+}
+
+.premium {
+    background: url(https://campaigns-test.scdn.co/images/premium_dancer.png) right bottom / 450px no-repeat;
+    overflow: hidden;
+    clear: both;
+    background-color: rgb(80, 155, 245);
+    height: 447px;
+}
+
+.premium .cont {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 130px 0 20px 0;
+}
+
+.premium .cont h1 {
+    font-size: 80px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.premium .cont h2 {
+    font-size: 30px;
+    color: white;
+    padding: 0;
+    margin: 24px 0;
+}
+
+.premium .cont button {
+    padding: 17px 48px;
+    border-radius: 40px;
+    border: none;
+    background-color: #1DB954;
+    display: block;
+    margin: 30px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.premium .cont button a {
+    color: white;
+    display: inline;
+}
+
+.premium .cont button a {
+    font-size: 14px;
+    font-family: "Circular Spotify Tx T Black";
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.premium .cont button:hover {
+    transition: 100ms linear;
+    filter: brightness(120%);
+    transform: scale(1.03);
+}
+
+.premium .cont span,
+a {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: white;
+}
+
+@media only screen and (max-width:1200px) {
+    .premium .cont {
+        width: 970px;
+    }
+
+    .premium {
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .premium {
+        background: url();
+        background-color: rgb(80, 155, 245);
+        height: auto
+    }
+
+    .premium .cont {
+        width: 720px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .premium .cont h1 {
+        font-size: 48px;
+    }
+
+    .premium .cont h2 {
+        font-size: 24px;
+    }
+
+    .premium .cont {
+        width: 100%;
+        padding: 80px 10px 60px 10px
+    }
+
+    .premium .cont button {
+        width: 100%;
+    }
+
+    .premium .cont button span,
+    a {
+        display: block;
+    }
+}
+
+.why {
+    overflow: hidden;
+    color: #222326;
+    text-align: center;
+    padding: 75px 15px;
+}
+
+.why h1 {
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+.why .total {
+    width: 1170px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.why .total .element {
+    float: left;
+    width: 25%;
+}
+
+.why .total .element .image {
+    width: 142px;
+    height: 142px;
+    margin: 0 auto 40px auto;
+}
+
+.why .total .element .image img {
+    width: 100%;
+}
+
+.element h2 {
+    font-size: 21px;
+}
+
+.element p {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+/*premium card section*/
+.pick {
+    background-color: #F8F8F8;
+    overflow: hidden;
+}
+
+.pick h1,
+p,
+h2,
+span,
+a {
+    padding: 0;
+    margin: 0;
+}
+
+.pick-text {
+    padding-top: 50px;
+}
+
+.pick-text h1,
+p {
+    color: #222326;
+    text-align: center;
+}
+
+.pick-text h1 {
+    font-size: 40px;
+}
+
+.pick-text p {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+.pick .card-container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 50px 15px;
+    overflow: hidden;
+}
+
+.pick .card-container .card {
+    float: left;
+    width: 23.94689%;
+    background-color: white;
+    border-radius: 13px;
+    /* height: 746px; */
+    padding: 20px 10px;
+    margin: 0 6px;
+    -webkit-box-shadow: 0px 0px 12px -3px rgba(0, 0, 0, 0.50);
+    -moz-box-shadow: 0px 0px 12px -3px rgba(0, 0, 0, 0.50);
+    box-shadow: 0px 0px 12px -3px rgba(0, 0, 0, 0.50);
+}
+
+.card-header {
+    margin-bottom: 20px;
+}
+
+.card-header .blue {
+    text-align: start;
+    padding: 4px 8px;
+    color: white;
+    background-color: #2E77D0;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.pick .card .card-header h2 {
+    overflow: hidden;
+    width: 100%;
+    font-size: 24px;
+    color: #222326;
+}
+
+.pick .card .card-header p {
+    overflow: hidden;
+    text-align: start;
+    font-size: 16px;
+    color: #222326;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+.card .line {
+    border-bottom: 1px solid rgb(218, 216, 216);
+}
+
+.card .card-body {
+    margin-top: 20px;
+    height: 355px;
+}
+
+.card .card-body p {
+    overflow: hidden;
+    text-align: start;
+    font-size: 16px;
+    color: #222326;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    display: inline;
+}
+
+#tick-mark {
+    position: relative;
+    display: block;
+    width: 8%;
+    float: left;
+    height: 20px;
+}
+
+.p-text {
+    width: 92%;
+    float: left;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+#tick-mark::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 50%;
+    width: 2px;
+    background-color: #222326;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+#tick-mark::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #222326;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+.card-body-text {
+    margin-bottom: 10px;
+}
+
+.card-footer button {
+    width: 100%;
+    border: none;
+    padding: 17px 48px;
+    background-color: #1DB954;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.card-footer button:hover {
+    transition: 100ms linear;
+    filter: brightness(120%);
+    transform: scale(1.03);
+}
+
+.card-footer button a {
+    font-size: 14px;
+    font-family: "Circular Spotify Tx T Black";
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center !important;
+    text-decoration: none;
+}
+
+.card-footer {
+    height: 166px;
+    padding-bottom: 190px;
+}
+
+.card-footer span {
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #919496;
+}
+
+.card-footer a {
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #919496;
+}
+
+footer {
+    background-color: black;
+    overflow: hidden;
+    padding: 25px 60px;
+}
+
+footer .left {
+    float: left;
+    margin-top: 34px;
+    width: 50%;
+}
+
+footer .left ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer .left ul li {
+    float: left;
+    padding-right: 20px;
+    list-style-type: none;
+}
+
+footer a {
+    font-size: 12px;
+    color: #919496;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #222326;
+}
+
+footer span {
+    color: #919496;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+}
+
+.country {
+    padding-top: 15px;
+    float: left;
+    width: 50%;
+}
+
+.px {
+    width: 110px;
+    overflow: hidden;
+    float: right;
+}
+
+.usa {
+    float: left;
+    padding-left: 40px;
+    width: 50%;
+    color: #919496;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+}
+
+.country .img {
+    margin-right: 10px;
+    float: right;
+    width: 25%;
+}
+
+.country .img img {
+    width: 100%;
+}
+
+.country .text span {
+    padding: 0;
+    float: left;
+    color: #919496;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+}
+
+@media only screen and (max-width:600px) {
+    footer {
+        padding: 25px 10px;
+    }
+
+    footer .left ul li {
+        padding-right: 10px;
+    }
+
+    footer a {
+        font-size: 10px;
+    }
+
+    footer span {
+        font-size: 10px;
+    }
+
+    footer .img {
+        margin-right: 0;
+    }
+
+    .px {
+        width: 94px;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .pick .card-container {
+        width: auto;
+    }
+
+    .pick .card-container .card {
+        float: none;
+        width: 410px;
+        margin: 0 auto 20px auto;
+        padding: 20px;
+    }
+
+    .card .card-body {
+        margin-top: 0px;
+        padding: 20px 0;
+        height: auto;
+    }
+
+    .card-footer {
+        height: auto;
+        padding-bottom: 80px;
+    }
+
+    .card-body-text {
+        margin-bottom: 6px;
+    }
+
+    #tick-mark {
+        width: 6%;
+        height: 16px;
+    }
+
+    .pick-text h1 {
+        font-size: 32px;
+    }
+
+    .why {
+        padding: 75px 15px;
+    }
+
+    .why h1 {
+        font-size: 48px;
+        margin-bottom: 60px;
+    }
+
+    .why .total {
+        width: 940px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .why .total .element {
+        float: left;
+        width: 50%;
+    }
+
+    .why .total .element .image {
+        width: 110px;
+        height: 110px;
+        margin: 0 auto 40px auto;
+        float: left;
+    }
+
+    .why .element-text {
+        float: left;
+        width: 60%;
+        overflow: hidden;
+        margin-left: 20px;
+    }
+
+    .why .element-text p,
+    h2 {
+        text-align: start;
+    }
+
+    .element h2 {
+        font-size: 21px;
+    }
+
+    .element p {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width:992px) {
+    .why .total {
+        width: 720px;
+    }
+
+    .why .total .element .image {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .why .total {
+        width: 100%;
+    }
+
+    .why .total .element {
+        float: left;
+        width: 100%;
+    }
+
+    .why h1 {
+        font-size: 32px;
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up - Spotify</title>
+    <link href="//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black"
+        rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="/images/icon.png" />
+    <link rel="stylesheet" href="/SignUp/sign.css">
+</head>
+
+<body>
+    <main>
+        <div class="image">
+            <a href="/index.html">
+                <img src="/images/black.png" alt="">
+            </a>
+        </div>
+        <h2>Sign up for free to start listening.</h2>
+        <button class="facebook">
+            <span>SIGN UP WITH FACEBOOK</span>
+        </button>
+        <div class="or">
+            <div class="line left"></div>
+            <div class="muted"><span>or</span></div>
+            <div class="line right"></div>
+        </div>
+        <div class="form">
+            <h2>Sign up with your email address</h2>
+            <form action="POST">
+                <label for="">What's your email?</label>
+                <input type="email" required placeholder="Enter your email.">
+                <label for="">Confirm your email</label>
+                <input type="email" required placeholder="Enter your email again.">
+                <label for="">Create a password</label>
+                <input type="password" required placeholder="Create a passsword.">
+                <label for="">What should we call you?</label>
+                <input type="text" required placeholder="Enter a profile name.">
+                <span>This appears on your profile.</span>
+                <label for="">What's your date of birth?</label>
+                <div class="birth">
+                    <div class="select">
+                        <label for="">Month</label>
+                        <select>
+                            <option value="0">Month</option>
+                            <option value="1">January</option>
+                            <option value="2">Febuary</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+                    <div class="day">
+                        <label for="">Day</label>
+                        <input type="number" required placeholder="DD" min="1" max=31>
+                    </div>
+                    <div class="year">
+                        <label for="">Year</label>
+                        <input type="number" required placeholder="YYYY" min="1900" max="2020">
+                    </div>
+                </div>
+            </form>
+            <div class="gender">
+                <label for="" style="display: block; margin: 20px 0 10px 0; font-size:14px ;">What's your
+                    gender?</label>
+                <label class="container">Male
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Female
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Non-Binary
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container1">Share my registration data with Spotify's content providers for marketing
+                    purposes.
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark1"></span>
+                </label>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="center">
+                <span class="muted">By clicking on Sign up, you agree to Spotify's<a href="#">Terms and Conditions of
+                        Use</a>.
+                </span>
+            </div>
+            <div class="x">
+                <span class="muted">To learn more about how Spotify collects, uses, shares and protects your personal
+                    data please read Spotify's <a href="#"> Privacy Policy</a>.</span>
+            </div>
+            <button><span>SIGN UP</span></button>
+            <div>
+                <span class="big">Have an account? <a href="/LogIn/login.html">Log in</a>.</span>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

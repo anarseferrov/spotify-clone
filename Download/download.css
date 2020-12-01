@@ -1,0 +1,692 @@
+@import url(//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black);
+
+@font-face {
+    font-family: "Circular Spotify Tx T Black";
+    src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot");
+    src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff") format("woff"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.svg#Circular Spotify Tx T Black") format("svg");
+}
+
+body {
+    margin: 0;
+    font-family: "Circular Spotify Tx T Black";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    overflow: hidden;
+    width: 100%;
+    background-color: rgba(0, 0, 0);
+}
+
+.container {
+    overflow: hidden;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    width: 140px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo img {
+    cursor: pointer;
+    width: 100%;
+}
+
+.menu {
+    float: right;
+}
+
+.menu a,
+span {
+    text-decoration: none;
+    float: left;
+    font-size: 16px;
+    padding: 28px 17px;
+}
+
+.white:hover {
+    color: #1DB760;
+}
+
+.menu span {
+    color: white;
+}
+
+.muted:hover {
+    transition: .2s;
+    color: #1DB760;
+}
+
+.white {
+    color: white;
+}
+
+.muted {
+    color: rgb(202, 199, 199);
+}
+
+.icon {
+    display: none;
+    float: none;
+}
+
+
+.icon i {
+    color: white;
+    font-size: 22px;
+}
+
+@media only screen and (max-width:992px) {
+    .logo {
+        width: 100px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .icon {
+        padding: 10px;
+        display: block;
+        float: right;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+/*responsive menu*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 9999;
+}
+
+#trans-p {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 0.03s;
+    background-color: rgba(0, 0, 0, 0.74);
+    overflow: hidden;
+    z-index: 5;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 36px;
+    display: block;
+    transition: 0.14s;
+}
+
+.sidenav p {
+    padding: 0px 8px 0px 32px;
+    display: block;
+    color: white;
+    font-size: 28px;
+}
+
+.sidenav .small {
+    color: rgb(175, 170, 170);
+    font-size: 25px;
+}
+
+.sidenav .small:hover {
+    color: #1DB954;
+}
+
+.sidenav p:after {
+    content: ' \2014';
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -4px;
+    right: 50px;
+    font-size: 42px;
+    color: white;
+}
+
+.side-icon-container {
+    padding-left: 26px;
+    padding-top: 145px;
+}
+
+.side-icon {
+    width: 100px;
+}
+
+.side-icon img {
+    width: 100%;
+    cursor: pointer;
+}
+
+@media only screen and (min-width:992px) {
+    .sidenav {
+        display: none;
+    }
+
+    #trans-p {
+        display: none;
+    }
+}
+
+.install {
+    overflow: hidden;
+    background-color: rgb(25, 230, 140);
+    padding-top: 190px;
+    padding-bottom: 100px;
+}
+
+.install .container {
+    overflow: hidden;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.install .text {
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    width: 77%;
+}
+
+.install .image {
+    overflow: hidden;
+    float: right;
+}
+
+.install h1 {
+    font-size: 48px;
+}
+
+.install a,
+p {
+    color: #181818;
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.install a:hover {
+    transition: .3s;
+    opacity: 0.8;
+}
+
+.install .image {
+    width: 23%;
+    position: relative;
+}
+
+.install .image .laptop {
+    padding-top: 40px;
+}
+
+.install .image .laptop img {
+    width: 100%;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 30px;
+}
+
+.check {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 30px;
+}
+
+@media only screen and (max-width:1200px) {
+    .install .container {
+        width: 100%;
+    }
+
+    .install .image {
+        width: 100%;
+        clear: both;
+    }
+
+    .install .text {
+        width: 100%;
+        clear: both;
+    }
+
+    .install .laptop {
+        width: 200px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .install .text h1 {
+        font-size: 37px;
+    }
+
+    .install .text {
+        padding: 10px;
+    }
+
+    .install {
+        padding: 120px 0;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .install .text h1 {
+        font-size: 32px;
+    }
+
+    .install .text p,
+    a {
+        font-size: 13px;
+    }
+}
+
+.store {
+    overflow: hidden;
+    padding: 50px 10px;
+}
+
+.store .header-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.store .header-text h1 {
+    font-size: 32px;
+    color: #181818;
+}
+
+.store .header-text p {
+    font-size: 16px;
+}
+
+.store .boxes {
+    overflow: hidden;
+    width: 500px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.store .boxes div {
+    float: left;
+    width: 120px;
+    padding: 5px;
+}
+
+.store img {
+    width: 100%;
+}
+
+@media only screen and (max-width:768px) {
+    .store .header-text h1 {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .store .boxes {
+        width: 100%;
+    }
+
+    .store .boxes div {
+        width: 25%;
+    }
+}
+
+.footer {
+    background-color: black;
+    overflow: hidden;
+    padding: 75px 45px;
+}
+
+.footer .common-logo,
+.link,
+.social,
+.common-links {
+    float: left;
+}
+
+.footer .common-logo {
+    width: 20%;
+}
+
+.footer .common-links {
+    width: 40%;
+}
+
+.footer .social {
+    width: 28%;
+}
+
+.scl {
+    float: right;
+}
+
+.footer .link {
+    margin-bottom: 70px;
+}
+
+.footer .link a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.footer .common-links .link {
+    width: 32.3333%;
+}
+
+.footer p,
+span {
+    color: rgb(175, 170, 170);
+}
+
+.social i {
+    font-size: 12px;
+    margin-left: 5px;
+    color: white;
+    background-color: rgb(37, 37, 37);
+}
+
+.footer .logo {
+    width: 140px;
+}
+
+.footer .link p {
+    font-size: 12px;
+    padding: 10px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.footer .link a {
+    font-size: 14px;
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer .logo img {
+    width: 100%;
+}
+
+.footer a:hover {
+    transition: .2s;
+    color: #1DB954;
+}
+
+.fa-instagram {
+    padding: 16px 18px;
+    border-radius: 40px;
+}
+
+.fa-twitter {
+    padding: 16px;
+    border-radius: 40px;
+}
+
+.fa-facebook {
+    padding: 16px 20px;
+    border-radius: 40px;
+}
+
+.social i:hover {
+    transition: .2s;
+    color: #1DB954;
+}
+
+.social i {
+    cursor: pointer;
+    font-size: 25px;
+}
+
+@media only screen and (max-width:992px) {
+    .footer .common-logo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer .social {
+        width: 100%;
+    }
+
+    .common-links {
+        margin-bottom: 50px;
+    }
+
+    .footer .common-links {
+        width: 100%;
+    }
+
+    .footer .social .scl {
+        float: left;
+    }
+
+}
+
+.foot {
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    margin-top: 50px;
+}
+
+.foot a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(148, 143, 143);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    padding-left: 13px;
+}
+
+
+.foot .footer-links,
+.country {
+    float: left;
+    width: 50%;
+}
+
+.px {
+    width: 110px;
+    overflow: hidden;
+    float: right;
+    padding-right: 20px;
+}
+
+.usa {
+    float: left;
+    width: 50%;
+    padding: 0;
+}
+
+.country .img {
+    float: right;
+    width: 50%;
+}
+
+.country .img img {
+    width: 100%;
+}
+
+.country .text span {
+    font-size: 10px;
+    padding: 0;
+    float: right;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer .common-links .link {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+
+    .footer .link {
+        margin-top: 20px;
+    }
+
+    .footer .logo {
+        width: 100px;
+    }
+}
+
+.alldevices {
+    background-color: rgb(34, 35, 38);
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.alldevices .image {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.alldevices h1 {
+    color: white;
+    text-align: center;
+}
+
+.alldevices .image img {
+    width: 100%;
+}
+
+.alldevices .list {
+    overflow: hidden;
+}
+
+.alldevices ul li {
+    list-style-type: none;
+}
+
+.alldevices .list .allLinks {
+    font-size: 16px;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.alldevices .list ul li {
+    color: white;
+    padding: 15px;
+    float: left;
+}
+
+.alldevices a {
+    color: #1DB760;
+}
+
+.alldevices a:hover {
+    transition: .3s;
+    filter: brightness(120%);
+}
+
+.alldevices ul li::before {
+    content: "\2022";
+    color: #1DB760;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.alldevices .none::before {
+    content: "";
+}
+
+.alldevices .nonLinks,
+.Links {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+    font-size: 15px;
+    display: none;
+    margin: 0 auto;
+}
+
+.alldevices .nonLinks {
+    width: 400px;
+}
+
+.alldevices .Links {
+    width: 540px;
+}
+
+.alldevices .link {
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media only screen and (max-width:1200px) {
+    .alldevices .allLinks {
+        display: none;
+    }
+
+    .alldevices .nonLinks,
+    .Links {
+        display: block;
+    }
+
+    .alldevices a {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .alldevices .nonLinks {
+        width: 50%;
+        float: left;
+        padding: 0 !important;
+        font-size: 14px;
+    }
+
+    .alldevices .Links {
+        width: 50%;
+        float: left;
+        padding: 0 !important;
+        font-size: 14px;
+    }
+
+    .alldevices ul li {
+        float: none !important;
+        text-align: center !important;
+    }
+
+    .alldevices ul li::before {
+        content: "";
+    }
+
+    .alldevices .image {
+        width: 80%;
+    }
+}

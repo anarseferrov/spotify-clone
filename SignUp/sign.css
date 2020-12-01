@@ -1,0 +1,431 @@
+@import url(//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black);
+
+@font-face {
+    font-family: "Circular Spotify Tx T Black";
+    src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot");
+    src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff") format("woff"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.svg#Circular Spotify Tx T Black") format("svg");
+}
+
+body {
+    margin: 0;
+    font-family: "Circular Spotify Tx T Black";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    width: 450px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 130px;
+}
+
+main h2 {
+    text-align: center;
+    line-height: 36px;
+    font-size: 31px;
+    letter-spacing: -0.04em;
+    color: #181818;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
+main .image {
+    width: 130px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+main .image img {
+    width: 100%;
+}
+
+main .facebook {
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    padding: 17px 48px;
+    background-color: rgb(58, 88, 151);
+    border-radius: 500px;
+    cursor: pointer;
+    line-height: 1;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    vertical-align: middle;
+}
+
+main .facebook span {
+    font-family: "Circular Spotify Tx T Black";
+    font-size: 14px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+main .facebook:hover {
+    transition: .1s;
+    transform: scale(1.03);
+    opacity: 0.8;
+}
+
+main .or {
+    padding: 20px 30px 0 30px;
+    overflow: hidden;
+    text-align: center;
+}
+
+main .or span {
+    color: #757575;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+main .or .line {
+    border-bottom: 1px solid #a0a0a0;
+}
+
+main .muted {
+    width: 14%;
+    float: left;
+}
+
+main .or .left {
+    width: 42%;
+    float: left;
+    padding-top: 10px;
+}
+
+main .or .right {
+    padding-top: 10px;
+    float: left;
+    width: 42%;
+}
+
+.form h2 {
+    letter-spacing: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #181818;
+}
+
+.form form input {
+    width: 100%;
+}
+
+.form form label {
+    display: block;
+    font-size: 14px;
+    padding: 20px 0 5px 0;
+}
+
+.form form input[type="text"],
+input[type="password"],
+input[type="email"] {
+    padding: 14px;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.form form span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    padding: 7px 0 10px 0;
+    font-size: 14px;
+    color: #181818;
+}
+
+.birth {
+    overflow: hidden;
+}
+
+.birth label {
+    font-size: 14px;
+    color: #181818;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.birth .select {
+    float: left;
+    width: 40%;
+}
+
+.select select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.day {
+    width: 20%;
+    float: left;
+    margin: 0 22px;
+}
+
+.day input[type="number"] {
+    padding: 14px;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+}
+
+.year {
+    width: 30%;
+    float: left;
+}
+
+.year input[type="number"] {
+    padding: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* The container */
+.container {
+    margin-top: 15px;
+    margin-right: 15px;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: 1px solid #a0a0a0;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+    border: 1px solid rgb(29, 185, 84);
+}
+
+/* When the radio button is checked, add a green background */
+.container input:checked~.checkmark {
+    background-color: rgb(29, 185, 84);
+    border: 1px solid rgb(29, 185, 84);
+    transition: .8s;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+/*custom checkbox*/
+/* The container */
+.container1 {
+    display: block;
+    margin-top: 24px;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #181818;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: 1px solid #a0a0a0;
+    border-radius: 2px;
+}
+
+/* On mouse-over, add a green background color */
+.container1:hover input~.checkmark1 {
+    border: 1px solid rgb(29, 185, 84);
+}
+
+/* When the checkbox is checked, add a blue background */
+.container1 input:checked~.checkmark1 {
+    background-color: rgb(29, 185, 84);
+    transition: .4s;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark1:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container1 input:checked~.checkmark1:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container1 .checkmark1:after {
+    left: 3px;
+    top: 1px;
+    width: 5px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer .muted {
+    color: #181818;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    clear: both;
+    width: auto;
+    text-align: center;
+}
+
+.footer a {
+    color: rgb(29, 185, 84);
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.footer div {
+    overflow: hidden;
+    text-align: center;
+}
+
+.x {
+    margin: 15px 0;
+}
+
+.footer button {
+    width: 100%;
+    margin: 15px auto 25px auto;
+    border: none;
+    padding: 17px 48px;
+    background-color: rgb(29, 185, 84);
+    border-radius: 500px;
+    cursor: pointer;
+    line-height: 1;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    vertical-align: middle;
+}
+
+.footer button span {
+    font-family: "Circular Spotify Tx T Black";
+    font-size: 14px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.footer button:hover {
+    transition: .1s;
+    transform: scale(1.03);
+    opacity: 0.8;
+}
+
+.big {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.big a {
+    font-size: 16px;
+}
+
+.footer a:hover {
+    filter: brightness(120%);
+}
+
+.center {
+    width: 400px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width:992px) {
+    main .image {
+        width: 90px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    main h2 {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    main {
+        width: auto;
+        margin: 0 35px;
+    }
+
+    .day {
+        margin: 0 15px;
+    }
+
+    .year {
+        width: 32%;
+    }
+}
